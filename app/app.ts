@@ -1,13 +1,14 @@
 import {Component, bootstrap} from 'angular2/angular2';
-import {TodoList} from './app/todoList.ts';
+import {TodoList} from './todoList.ts';
 
-@Component{(
+@Component({
   selector: 'app',
   directives: [TodoList],
-  template: 
+  template: `
     <h1>Todo App</h1>
     <todo-list></todo-list>
-)}
+    `
+})
 class AppComponent {
   constructor() {
     

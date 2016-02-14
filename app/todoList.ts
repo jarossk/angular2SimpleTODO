@@ -1,12 +1,13 @@
 import {Component, CORE_DIRECTIVES} from 'angular2/angular2';
-import {TodoItem} from './app/todoItem.ts';
+import {TodoItem} from './todoItem.ts';
 
 @Component({
   selector: 'todo-list',
-  template: 
+  template: `
   <ul>
     <todo-item *ng-for="#todo of todos" [todo]="todo"></todo-item>
-  </ul>,
+  </ul>
+  `,
   directives: [CORE_DIRECTIVES, TodoItem]
 })
 export class TodoList {
@@ -17,11 +18,15 @@ export class TodoList {
 }
 var TODOS = [
   {
-    content: 'Discuss new feature',
+    content: 'Wake up',
     isCompleted: false
   },
   {
-    content: 'Fix issue',
+    content: 'Teeth cleaning',
+    isCompleted: false
+  },
+    {
+    content: 'Breakfast',
     isCompleted: false
   }
 ]
