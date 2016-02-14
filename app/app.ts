@@ -1,5 +1,5 @@
 import {Component, bootstrap} from 'angular2/angular2';
-import {TodoList} from './todoList.ts';
+import {TodoService} from './todoService.ts';
 
 @Component({
   selector: 'app',
@@ -14,5 +14,5 @@ class AppComponent {
     
   }
 }
-bootstrap(AppComponent);
+bootstrap(AppComponent, [TodoService]);
 
