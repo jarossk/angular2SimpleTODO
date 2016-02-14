@@ -33,11 +33,11 @@ var todos = [
   {
     content: 'Learn TypeScript',
     createdAt: new Date(),
-    isCompleted: false
+    isCompleted: true
   },
   {
     content: 'Learn Node.js',
     createdAt: new Date(),
-    isCompleted: true
+    isCompleted: false
   }
 ]

@@ -22,7 +22,7 @@ import {TodoService} from './todoService.ts';
   </li>
   `
 })
-export class TodoItem {
+export class TodoItemComponent {
   constructor(private todoService: TodoService) {
     
   }
